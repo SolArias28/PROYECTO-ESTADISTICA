@@ -116,6 +116,9 @@ def listarnodos():
 
 
 def buscar():
+    G = _estado["G"]
+    posicion = _estado["posicion"]
+    nombres = _estado["nombres"]
     if G is None:
        crearred()
        G, posicion, nombres = _estado["G"], _estado["posicion"], _estado["nombres"]
